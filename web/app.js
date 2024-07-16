@@ -2210,7 +2210,7 @@ if (typeof PDFJSDev === "undefined" || PDFJSDev.test("GENERIC")) {
       // start accepting URLs from foreign origin -- CORS headers on the remote
       // server must be properly configured.
       if (
-        !fileOrigin.includes(".droz.cloud") ||
+        !fileOrigin.includes(".droz.cloud") &&
         !fileOrigin.includes(".droz.services")
       ) {
         throw new Error("file origin does not match viewer's");
