@@ -2271,7 +2271,8 @@ if (typeof PDFJSDev === "undefined" || PDFJSDev.test("GENERIC")) {
       // server must be properly configured.
       if (
         !fileOrigin.includes(".droz.cloud") &&
-        !fileOrigin.includes(".droz.services")
+        !fileOrigin.includes(".droz.services") &&
+        !fileOrigin.includes(".drozbase.com")
       ) {
         throw new Error("file origin does not match viewer's");
       }
